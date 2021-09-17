@@ -8,6 +8,8 @@ class sol1 {
         A bijective mapping means that no two characters map to the same string, and no character maps to two different strings.
         
         E.g pattern = "abab", s = "redblueredblue" --> true
+
+        Backtrack + HashSet + HashMap: Recursively find the potential substring for each element in pattern.
     */
     public static boolean wordPatternMatch(String pattern, String s) {
         Map<Character, String> map = new HashMap<>();
